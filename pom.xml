@@ -23,7 +23,17 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
+	
+	<distributionManagement>
 
+	       <repository>
+		 <id>internal.repo</id>
+		 <name>Internal repo</name>
+		 <url>file:///var/lib/jenkins/myartifacts/</url>
+	       </repository>
+
+	</distributionManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
